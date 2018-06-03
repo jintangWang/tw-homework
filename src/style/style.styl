@@ -1,0 +1,51 @@
+*
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+
+ul
+    list-style: none    
+
+.clearfix 
+    &:before, &:after
+        content: ''
+        display: block
+    &:after    
+        clear: both
+        overflow: hidden
+
+.centerMiddle
+    display: flex
+    justify-content: center
+    align-items: center
+
+.header
+    height: 85px
+    box-shadow: 5px 0 5px 5px #e1e4e6
+    flex-direction: column
+    // .title
+        // margin: 20px auto 
+    .avatar
+        align-self: flex-end
+        margin-right: 15px
+        border-radius: 100%
+
+.main
+    height: calc(100vh - 120px)
+    background: #f3f3f3
+    overflow-y: scroll
+
+.footer
+    height: 35px     
+    font-size: 12px    
+
+.container
+    display: flex
+    width 1200px
+    height: 100%
+    margin: 0 auto
+    .menu
+        width 25%
+        background: #2d4054
+    .content
+        width 75%    
